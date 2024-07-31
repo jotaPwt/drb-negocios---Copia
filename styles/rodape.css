@@ -1,0 +1,52 @@
+
+.rodape-info {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-titulo{
+    align-items: center;
+    margin: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.link-email{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+
+h3 {
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+
+.meios-contato {
+    display: grid;
+    gap: 10px;
+}
+
+.zap-logo {
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.insta-logo {
+    height: 1.2em;
+    width: 1.2em;
+    margin: 0 10px;
+}
+
+.email-logo {
+    height: 1.2em;
+    width: 1.2em;
+    margin: 0 10px;
+}
+

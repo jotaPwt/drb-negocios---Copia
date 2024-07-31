@@ -1,0 +1,23 @@
+
+.conteiner__header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagem__logo {
+    width: 8em;
+    height: 8em;
+    padding: 0.5em;
+}
+
+
+h1 {
+    font-size: 1.6em;
+    color: #2c3e50;
+    font-family: var(--fonte-titulo);
+    font-weight: 900;
+}
+
+

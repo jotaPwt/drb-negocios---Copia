@@ -1,0 +1,49 @@
+.conteiner {
+    margin: 1em 2em;
+}
+
+.contato-titulo {
+    display: flex;
+    padding: 16px;
+    
+}
+
+
+#idconteiner {
+    display: grid;
+}
+
+.imagem-banner {
+    width: 100%;
+    height: auto;
+    margin: 2em 0 0 0;
+    border-radius: 10px;
+}
+
+.subtitulo {
+    margin: 1em 0 1em 0;
+}
+
+.botao-oportunidades {
+    border: 2px solid white;
+    border-radius: 10em; 
+    margin: 1.5em 0;
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: 800;
+    background-color: var(--cor-principal);
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/*
+.botao-oportunidades:hover {
+    border: black;
+    color: black;
+    background-color: whitesmoke;
+}
+
+*/

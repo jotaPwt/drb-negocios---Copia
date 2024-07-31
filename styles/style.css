@@ -1,0 +1,718 @@
+@import url(./header.css);
+@import url(./about-us.css);
+@import url(./rodape.css);
+@import url(./menu-hamburguer.css);
+@import url(./oportunidades.css);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #132539;
+    --branco: white;
+    --fonte-principal: Madefor, "Helvetica Neue", Helvetica, Arial, "メイリオ", "meiryo", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", sans-serif;
+    --fonte-titulo: "Open Sans", sans-serif;
+    --fonte-nunito: "Nunito Sans", sans-serif;
+    --fonte-roboto: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-roboto);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Evita overflow horizontal */
+}
+
+header {
+    background: rgb(4,20,37);
+    background: linear-gradient(90deg, rgba(4,20,37,0.8436624649859944) 24%, rgba(43,73,106,0.829656862745098) 59%, rgba(211,221,227,0.19100140056022408) 100%);
+
+    
+   /*background-color:#e3e3f1 ;
+   */
+}
+
+.main {
+    flex: 1; /* Faz com que o main ocupe o espaço restante */
+    width: 100%;
+    padding: 1em;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,100,119,1) 100%);
+    display: grid;
+}
+
+.conteiner {
+    border-bottom: solid white 2px;
+   
+}
+
+.logo-titulo {
+    width: 80%;
+    padding: 1em;
+}
+
+h2 {
+    margin: 1em 0 0.5em 0;
+    font-size: 1.5rem;
+    color: var(--branco);
+    text-transform: uppercase;
+}
+
+p {
+    margin: 1em 0;
+    font-size: 0.8rem; /* Define um tamanho de fonte específico */
+    line-height: 1.5;
+    color: var(--branco);
+    
+    font-weight: 600;
+}
+
+.servicos {
+    padding: 1em;
+}
+
+#conf-botao {
+    border: 2px solid black;
+    border-radius: 10em; 
+    padding: 0.4em 4em;
+    font-weight: 600;
+    background-color: var(--branco);
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape {
+    background-color: var(--cor-principal);
+    padding: 4em;
+    width: 100%;
+    border: solid 1px black;
+}
+
+.texto-rodape {
+    color: white;
+    font-size: 1.8em;
+    font-style: oblique;
+    justify-content: center;
+    border: none;
+}
+
+.rodape-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-titulo {
+    margin: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.link-email {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 0.5em 0 0 0;
+    color: white;
+    border-bottom: 3px solid white;
+    max-width: 100%;
+    padding: 8px;
+}
+
+
+
+.meios-contato {
+    display: grid;
+    gap: 10px;
+}
+
+.zap-logo {
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: 5px;
+}
+
+
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media screen and (max-width: 600px) {
+
+    .frase-imp{
+        font-size: 1em;
+        font-style: italic;
+        background-color: var(--cor-principal);
+        border-radius: 4px;
+        border-radius: 4px;
+        text-align: center;
+        
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1.1em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        width: 80%;
+    }
+
+    .div-banner {
+        text-align: center;
+        
+    }
+
+    .p-servicos {
+        font-size: 0.8em;
+    }
+    
+    .header-elementos {
+        display: none;
+    }
+    
+    .menu-icon {
+        font-size: 2em;
+        color: white;
+    }
+    
+    .menu li {
+        width: 100%;
+        padding: 1em;
+    }
+    
+    .imagem__logo {
+        max-width: 10vh;
+        height: auto;
+    }
+
+    .imagem-banner {
+        width: 30vh;
+        margin: 3em 0;
+        display: none;
+    } 
+    
+
+    .imagem-banner-servicos {
+        width: 80%;
+        border-radius: 1em;
+    }   
+
+    .div-banner {
+        text-align: center;
+    }
+
+
+    .botao-oportunidades {
+        width: 100%;
+    }
+
+    .logo-titulo {
+        width: 90%;
+    padding: 1em;
+    }
+    
+}
+
+
+/*responsitividade de Ipad/laptop*/
+
+@media screen and (min-width: 600px) {
+
+    header, body {
+        width: 100%;
+    }
+
+    .frase-imp{
+        font-size: 1.4em;
+        font-style: italic;
+        background-color: var(--cor-principal);
+        border-radius: 4px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    h2 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        width: 60%;
+    }
+
+    .p-servicos {
+        font-size: 0.9em;
+    }
+    
+
+    .texto-rodape {
+        margin: 0.5em 0;
+        font-size: 2em;
+    }
+
+    .botao-oportunidades {
+        font-size: 1.5em;
+    }
+
+    .header-elementos {
+        display: none;
+    }
+
+    .menu-icon {
+        color: white;
+    }
+
+    /*alterações do menu */
+
+    .header-elementos {
+        display: none;
+    }
+
+    
+    .menu-icon {
+        font-size: 3em;
+        color: white;
+    }
+
+    .menu li {
+        padding: 2em;
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+
+    .menu-elementos {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+
+    /*imagens*/
+
+    .imagem__logo {
+        max-width: 10rem;
+        height: auto;
+        
+    }
+
+    .imagem-banner {
+        width: 50vh;
+        margin: 3em 0;
+        display: none;
+    }
+
+    .imagem-banner-servicos {
+        width: 80%;
+        border-radius: 1em;
+        align-items: center;
+    }   
+
+    .div-banner {
+        text-align: center;
+    }
+    
+    
+
+}
+
+@media screen and (min-width: 800px) {
+
+    header, body {
+        width: 100%;
+    }
+
+    .header-elementos {
+        display: none;
+    }
+
+    .menu-icon {
+        color: white;
+    }
+
+    .frase-imp{
+        font-size: 1.4em;
+        font-style: italic;
+        background-color: var(--cor-principal);
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.4em; 
+        width: 40%;
+    }
+
+    .p-servicos {
+        font-size: 1em;
+    }
+
+    .div-banner {
+        text-align: center;
+    }
+    
+    p {
+        font-size: 1.3em;
+    }
+    
+    .texto-rodape {
+        margin: 0.5em 0;
+        font-size: 2em;
+    }
+
+
+    .botao-oportunidades {
+        font-size: 1.5em;
+        min-width: 100%;
+    }
+
+    /*alterações do menu */
+
+    
+    .menu-icon {
+        font-size: 3em;
+    }
+
+    .menu li {
+        padding: 2em;
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+
+    .menu-elementos {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+
+    /*imagens*/
+
+    .imagem-banner {
+        width: 50vh;
+        margin: 2em 1em 5em 0;
+    }
+
+    .imagem-banner-servicos {
+        width: 80%;
+        border-radius: 1em;
+    }
+    
+    .logo-titulo {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .imagem__logo {
+        max-width: 10em;
+        height: auto;
+    
+}
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1428px) {
+    .hamburguer {
+        display: none;
+    }
+
+    .conteiner-main {
+        display: flex;
+    }
+
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    h3 {
+        font-size: 1.7em;
+        width: 40%;
+    }
+
+    p {
+        font-size: 1.6em;
+        width: 60%;
+    }
+
+    .p-servicos {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .ancora {
+        text-decoration: none;
+        color: white;
+        font-size: 1.6em;
+        font-weight: 900;
+        margin: 0 12px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .ancora:hover {
+        color: var(--cor-principal);   
+    }
+
+
+    .header-elementos {
+        display: flex;
+        list-style: none;
+        gap: 3em;
+         
+    }
+
+    .frase-imp {
+        font-size: 1.4em;
+    }
+
+    .header-elemento {
+        border-radius: 3px;
+        color: var(--cor-principal);
+        width: 100%;
+        padding: 3px;
+        
+    }
+
+    .botao-oportunidades {
+        font-size: 1.2em;
+    }
+
+    .p-home {
+        width: 100%;
+    }
+
+
+
+    .imagem__logo {
+        max-width: 8rem;
+        height: auto;
+        margin-left: 5em;
+    }
+    
+   
+    .logo-titulo {
+        max-width: 80%;
+        height: auto;  
+    }
+
+    .div-oport {
+        display: flex;
+        width: 60%;
+    }
+
+    .imagem-banner {
+        width: 60vh;
+        margin: 0 1em 5em 0;
+    }
+
+    .imagem-banner-servicos {
+        width: 80%;
+        border-radius: 1em;
+    }
+}
+
+@media screen and (min-width: 1428px) {
+
+    .hamburguer {
+        display: none;
+    }
+
+    .header-elementos {
+        display: flex;
+        list-style: none;
+        gap: 3em;
+    }
+
+    .ancora {
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+        font-weight: 900;
+        margin: 0 1em;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .ancora:hover {
+        color: var(--cor-principal);   
+    }
+
+
+    .header-elemento {
+        border-radius: 3px;
+        color: var(--cor-principal);
+        width: 100%;
+        box-shadow: black;
+        padding: 3px;
+    }
+
+
+    .conteiner-main {
+        display: flex;
+    }
+
+    /*
+
+    .imagem-Fcontato {
+        width: 50vh;
+        height: auto;
+        border: 1px solid;
+        border-radius: 1em;
+        margin: 0 7em 9em 3em;
+    }
+
+    */
+
+    h1 {
+        font-size: 3.5em;
+        margin-left: 1em;
+        color: white;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        width: 25%;
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 2em;
+        width: 70%;
+    }
+
+    .p-servicos {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .frase-imp {
+        width: 100%;
+        font-size: 1.4em;
+    }
+
+    .texto-rodape {
+        margin: 0.5em 0;
+        font-size: 2.5em;
+    }
+
+    .contato-titulo {
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+
+    .imagem__logo {
+        width: 100%;
+    }
+
+
+    .div-banner {
+        text-align: center;
+        
+    }
+
+
+    .imagem-banner-servicos {
+        width: 60%;
+        border-radius: 1em;
+    }
+
+    .logo-titulo {
+        width: 50vh;
+        height: auto;
+        
+    }
+
+    .div-oport {
+        width: 60%;
+    }
+
+    .botao-oportunidades {
+        font-size: 1.3em;
+        
+    }
+
+
+    .p-home {
+        width: 100%;
+    }
+
+    
+    #conf-botao {
+        padding: 0.6em 3em;
+    }
+
+    .botao-oportunidades:hover {
+        color: white;
+        background-color: transparent;
+        
+    }
+
+    #conf-botao:hover {
+        background-color: var(--cor-principal);
+        color: white;
+        border: white solid 1px;
+    }
+}
