@@ -7,7 +7,7 @@
 .menu-icon {
     display: block;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--cor-principal);
     margin-right: 1rem;
 }
@@ -24,7 +24,7 @@
     top: 100%;
     left: 0;
     background-color: #fff;
-    width: 25vh;
+    width: 29vh;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     z-index: 1;
     
@@ -33,7 +33,7 @@
 .menu li {
     padding: 1.5rem;
     border-bottom: 1px solid #ddd;
-    width: 15em;
+    width: 100%;
     background-color: white;
 }
 

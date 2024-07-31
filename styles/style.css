@@ -100,7 +100,7 @@ p {
 
 .rodape {
     background-color: var(--cor-principal);
-    padding: 4em;
+    padding: 2em;
     width: 100%;
     border: solid 1px black;
 }
@@ -176,17 +176,21 @@ h3 {
     margin-top: 16px;
 }
 
+
+
 /* Responsividade para dispositivos móveis */
+
+
 @media screen and (max-width: 600px) {
 
     .frase-imp{
-        font-size: 1em;
+        font-size: 0.7em;
         font-style: italic;
         background-color: var(--cor-principal);
         border-radius: 4px;
         border-radius: 4px;
         text-align: center;
-        
+        margin-top: 0;
     }
 
     h1 {
@@ -194,15 +198,16 @@ h3 {
     }
     
     h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     
     p {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     h3 {
-        font-size: 1.3em;
+        margin-top: 1em;
+        font-size: 1em;
         width: 80%;
     }
 
@@ -220,7 +225,7 @@ h3 {
     }
     
     .menu-icon {
-        font-size: 2em;
+        font-size: 1.5em;
         color: white;
     }
     
@@ -246,6 +251,7 @@ h3 {
         border-radius: 1em;
     }   
 
+
     .div-banner {
         text-align: center;
     }
@@ -257,10 +263,69 @@ h3 {
 
     .logo-titulo {
         width: 90%;
-    padding: 1em;
+        padding: 1em;
     }
+
     
+
+    .texto-rodape {
+        font-size: 1.3em;
+    }
+
+    /*OPORTUNIDADES*/
+
+    .main-conteiner {
+        margin: 1em;
+    }
+
+    .btn {
+        font-size: 0.7em;
+        padding: 10px 20px;
+        margin: 0 0 15px 0;
+        width: 90%;
+    }
+
+    .btn-zap-preto {
+        background-position: 5%;
+        background-size: 1.5em;
+    }
+
+    .btn-zap-preto:hover {
+        background-position: 5%;
+        background-size: 1.5em;
+    }
+
+    .p-oportunidades-extra {
+        display: none;
+    }
+
+    .form1 {
+        top: 7em;
+    }
+
+    .imagem-Fcontato {
+        height: 100%;
+        width: 100%;
+    }
+
+    .form-descricao{
+       display: none;
+    }
+
+    .p-oportunidades {
+        font-size: 1.3em;
+       
+    }
+
+    .valor {
+        display: none;
+    }
+
+    .p-textos {
+        margin-top: 6em;
+    }
 }
+
 
 
 /*responsitividade de Ipad/laptop*/
@@ -316,6 +381,10 @@ h3 {
         color: white;
     }
 
+    .menu{
+        width: 40vh;
+    }
+
     /*alterações do menu */
 
     .header-elementos {
@@ -362,8 +431,48 @@ h3 {
     .div-banner {
         text-align: center;
     }
+
+      /*OPORTUNIDADES*/
+
+
+      .main-conteiner {
+        margin: 1em;
+    }
+     
+    .btn-zap-preto {
+        background-position: 10%;
+        background-size: 2em;
+    }
+
+    .btn-zap-preto:hover {
+        background-position: 10%;
+        background-size: 2em;
+    }
+
+    .form1 {
+        top: 4.5em;
+    }
+
+    .imagem-Fcontato {
+        height: 100%;
+        width: 100%;
+    }
     
-    
+    .form-descricao{
+       display: none;
+    }
+
+    .p-oportunidades {
+        font-size: 2em;
+    }
+
+    .valor {
+        display: none;
+    }
+
+    .p-textos {
+        margin-top: 5em;
+    }
 
 }
 
@@ -436,6 +545,7 @@ h3 {
         padding: 2em;
         font-size: 1.2em;
         font-weight: 800;
+        width: 40vh;
     }
 
     .menu-elementos {
@@ -456,19 +566,89 @@ h3 {
     }
     
     .logo-titulo {
-        width: 100%;
+        width: 90%;
         padding: 1em;
     }
 
     .imagem__logo {
         max-width: 10em;
         height: auto;
-    
 }
+
+  /*OPORTUNIDADES*/
+
+  .main-conteiner {
+    margin: 1em;
+}
+
+    .btn-zap-preto {
+        background-position: 10%;
+        background-size: 2em;
+    }
+
+    .form1 {
+        top: 12em;
+    }
+
+    .imagem-Fcontato {
+        height: 300px;
+        width: 400px;
+        margin: 1em 0.5em 0 0.5em;
+    }
+
+    .conteiner-oportunidade {
+        display: flex;
+    }
+    
+    .p-oportunidades {
+        margin-left: 0.5em;
+        
+    }
+
+    .btn {
+        font-size: inherit;
+        padding: 15px 80px;
+        margin: 0 0 15px 10px;
+    }
+
+    .form-descricao{
+        font-size: 1em;
+        color: whitesmoke;
+        display: block;
+    }
+
+    .p-oportunidades {
+        margin-left: 0.5em;
+        font-size: 1.4em;
+    }
+
+    .p-oportunidades-extra {
+        display: none;
+    }
+
+    .main-conteiner {
+        margin: 2em 0;
+    }
+
+    .valor {
+        background-color: var(--cor-principal);
+        font-size: 2.3em;
+        width: 100%;
+        border-radius: 1em;
+        display: none;
+    }
+
+    .p-textos {
+        margin-top: 0;
+    }
 
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1428px) {
+    .main {
+        padding: 5em;
+    }
+
     .hamburguer {
         display: none;
     }
@@ -492,7 +672,7 @@ h3 {
     }
 
     p {
-        font-size: 1.6em;
+        font-size: 1.8em;
         width: 60%;
     }
 
@@ -556,10 +736,7 @@ h3 {
         height: auto;  
     }
 
-    .div-oport {
-        display: flex;
-        width: 60%;
-    }
+    
 
     .imagem-banner {
         width: 60vh;
@@ -570,9 +747,86 @@ h3 {
         width: 80%;
         border-radius: 1em;
     }
+
+
+    /*OPORTUNIDADES*/
+
+    .div-oport {
+        display: flex;
+        width: 60%;
+    }
+
+    .btn-zap-preto {
+        background-position: 10%;
+        background-size: 2em;
+    }
+
+    .form1 {
+        top: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    form {
+        margin-bottom: 6em;
+    }
+
+    .imagem-Fcontato {
+        height: 300px;
+        width: 400px;
+        margin: 1em 2em 0 0.5em;
+    }
+
+    .conteiner-oportunidade {
+        display: flex;
+    }
+    
+    .p-oportunidades {
+        margin-left: 0.5em;
+    }
+
+    .btn {
+        font-size: inherit;
+        padding: 15px 80px;
+        margin: 0 0 0 15px;
+    }
+
+    .form-descricao{
+        font-size: 1em;
+        color: whitesmoke;
+        display: block;
+        width: 70%;
+    }
+
+    .main-conteiner {
+        margin: 0 0 5em 0;
+    }
+
+    .p-oportunidades {
+        margin-left: 0.5em;
+        width: 100%;
+    }
+
+    .valor {
+        background-color: var(--cor-principal);
+        font-size: 2.3em;
+        width: 50%;
+        border-radius: 1em;
+        display: block;
+    }
+
+    
+
+
 }
 
 @media screen and (min-width: 1428px) {
+
+    .main {
+        padding: 7em;
+    }
 
     .hamburguer {
         display: none;
@@ -635,7 +889,7 @@ h3 {
 
     h3 {
         width: 25%;
-        font-size: 1.5em;
+        font-size: 2em;
     }
     
     p {
@@ -644,7 +898,7 @@ h3 {
     }
 
     .p-servicos {
-        font-size: 1.2em;
+        font-size: 1.4em;
         width: 100%;
     }
 
@@ -702,6 +956,7 @@ h3 {
     
     #conf-botao {
         padding: 0.6em 3em;
+        font-size: 1.5em;
     }
 
     .botao-oportunidades:hover {
@@ -714,5 +969,73 @@ h3 {
         background-color: var(--cor-principal);
         color: white;
         border: white solid 1px;
+    }
+
+    .p-quemsomos {
+        margin-bottom: 3em;
+    }
+
+    /*OPORTUNIDADES*/
+
+    .main-conteiner {
+        margin: 0 0 5em 0;
+    }
+
+    .btn-zap-preto {
+        background-position: 10%;
+        background-size: 2em;
+    }
+
+    .form1 {
+        top: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    form {
+        margin-bottom: 6em;
+    }
+
+    .imagem-Fcontato {
+        height: 500px;
+        width: 600px;
+        margin: 0em 2em 0 0.5em;
+    }
+
+    .conteiner-oportunidade {
+        display: flex;
+    }
+    
+    .p-oportunidades {
+        margin-left: 1.2em;
+        width: 100%;
+    }
+
+    .btn {
+        font-size: inherit;
+        padding: 25px 80px;
+        margin: 0 0 15px 15px;
+    }
+
+   
+
+    .form-descricao{
+       
+        font-size: 1.7em;
+        color: whitesmoke;
+        display: block;
+        width: 90%;
+        }
+
+
+    .valor {
+        background-color: var(--cor-principal);
+        font-size: 2em;
+        width: 50%;
+        border-radius: 1em;
+        display: block;
+        margin: 0;
     }
 }
