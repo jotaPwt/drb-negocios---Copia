@@ -66,7 +66,7 @@ header {
 }
 
 h2 {
-    margin: 1em 0 0.5em 0;
+    margin: 0em 0 0.5em 0;
     font-size: 1.5rem;
     color: var(--branco);
     text-transform: uppercase;
@@ -135,12 +135,12 @@ p {
 }
 
 h3 {
-    font-size: 1.8em;
-    margin: 0.5em 0 0 0;
+    font-size: 1.9em;
+    margin: 1em 0 1em 0;
     color: white;
-    border-bottom: 3px solid white;
+    
     max-width: 100%;
-    padding: 8px;
+    
 }
 
 
@@ -176,12 +176,40 @@ h3 {
     margin-top: 16px;
 }
 
+.main-conteiner {
+    padding: 1em;
+    background-color: var(--cor-principal);
+    border: solid 1px transparent;
+    border-radius: 5px;
+}
 
+.form-textos {
+    text-align: left;
+}
+
+
+.imagem-trato{
+display: none;
+}
+
+.servicos h2 {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.div-servicos {
+    margin-top: 2em;
+}
 
 /* Responsividade para dispositivos móveis */
 
 
 @media screen and (max-width: 600px) {
+
+    .p-quemsomos {
+        margin-bottom: 1em;
+    }
+
 
     .frase-imp{
         font-size: 0.7em;
@@ -191,6 +219,7 @@ h3 {
         border-radius: 4px;
         text-align: center;
         margin-top: 0;
+        
     }
 
     h1 {
@@ -209,6 +238,10 @@ h3 {
         margin-top: 1em;
         font-size: 1em;
         width: 80%;
+    }
+
+    .subtitulo {
+        margin: 0;
     }
 
     .div-banner {
@@ -235,7 +268,7 @@ h3 {
     }
     
     .imagem__logo {
-        max-width: 10vh;
+        max-width: 7vh;
         height: auto;
     }
 
@@ -262,11 +295,10 @@ h3 {
     }
 
     .logo-titulo {
-        width: 90%;
+        width: 80%;
         padding: 1em;
     }
 
-    
 
     .texto-rodape {
         font-size: 1.3em;
@@ -274,14 +306,23 @@ h3 {
 
     /*OPORTUNIDADES*/
 
+   
+    
     .main-conteiner {
         margin: 1em;
+        text-align: center;
+        
+        height: auto;
+    }
+        
+    .contato-titulo {
+        font-size: 1.4em;
     }
 
     .btn {
-        font-size: 0.7em;
-        padding: 10px 20px;
-        margin: 0 0 15px 0;
+        font-size: 0.6em;
+        padding: 11px 12px;
+        margin: 10px 0 15px 0;
         width: 90%;
     }
 
@@ -295,35 +336,55 @@ h3 {
         background-size: 1.5em;
     }
 
-    .p-oportunidades-extra {
-        display: none;
-    }
-
+    
     .form1 {
-        top: 7em;
-    }
-
-    .imagem-Fcontato {
-        height: 100%;
-        width: 100%;
-    }
-
-    .form-descricao{
-       display: none;
+        top: 6.5em;
+        
     }
 
     .p-oportunidades {
-        font-size: 1.3em;
-       
+        font-size: 1.1em;
+        margin-top: 7em;
+    
     }
 
-    .valor {
-        display: none;
+    .titulo-oport {
+        margin: 1em 0 0 0.5em;
+        font-size: 1.1em;
     }
 
-    .p-textos {
-        margin-top: 6em;
+    #conf-botao {
+        padding: 0.3em 0.2em;
+        font-size: 1em;
     }
+
+
+
+
+
+    .carousel::before, .carousel::after, .carousel__prev, .carousel__next {
+        position: absolute;
+        top: 0;
+        margin-top: 37.5%;
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        font-size: 0;
+        outline: 0;
+    }
+
+    .carousel__navigation-button {
+        display: inline-block;
+        width: 1.1rem;
+        height: 1.1rem;
+        background-color: #333;
+        background-clip: content-box;
+        border: 0.25rem solid transparent;
+        border-radius: 50%;
+        font-size: 0;
+        transition: transform 0.1s;
+      }
 }
 
 
@@ -332,12 +393,18 @@ h3 {
 
 @media screen and (min-width: 600px) {
 
+
+    .main {
+        padding: 2em;
+    }
+
+
     header, body {
         width: 100%;
     }
 
     .frase-imp{
-        font-size: 1.4em;
+        font-size: 1em;
         font-style: italic;
         background-color: var(--cor-principal);
         border-radius: 4px;
@@ -347,11 +414,11 @@ h3 {
 
 
     h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
     p {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     h3 {
@@ -359,8 +426,12 @@ h3 {
         width: 60%;
     }
 
+    .subtitulo {
+        margin: 0 0 0.5em 0;
+    }
+
     .p-servicos {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     
 
@@ -370,7 +441,7 @@ h3 {
     }
 
     .botao-oportunidades {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .header-elementos {
@@ -409,6 +480,7 @@ h3 {
     }
 
     /*imagens*/
+    
 
     .imagem__logo {
         max-width: 10rem;
@@ -432,21 +504,28 @@ h3 {
         text-align: center;
     }
 
+    
+
       /*OPORTUNIDADES*/
 
 
-      .main-conteiner {
-        margin: 1em;
+    .main-conteiner {
+        margin: 2em;
     }
      
     .btn-zap-preto {
-        background-position: 10%;
+        background-position: 5%;
         background-size: 2em;
     }
 
     .btn-zap-preto:hover {
         background-position: 10%;
         background-size: 2em;
+    }
+
+    .btn {
+        padding: 15px 60px;
+        margin-top: 15px;
     }
 
     .form1 {
@@ -458,195 +537,111 @@ h3 {
         width: 100%;
     }
     
-    .form-descricao{
-       display: none;
-    }
-
+   
     .p-oportunidades {
         font-size: 2em;
-    }
-
-    .valor {
-        display: none;
-    }
-
-    .p-textos {
-        margin-top: 5em;
+        margin-top: 3em;
     }
 
 }
 
-@media screen and (min-width: 800px) {
 
-    header, body {
-        width: 100%;
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    display: block;
+  }
+  
+  
+  /* Controles do carrossel */
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+  
+  /* Media queries para tamanhos maiores */
+  @media (min-width: 800px) {
+    .carousel-item img {
+      width: auto;
+      max-width: 100%;
+
     }
 
-    .header-elementos {
-        display: none;
+    .main-conteiner {
+        padding: 1em;
+        margin: 2em;
     }
 
-    .menu-icon {
-        color: white;
-    }
-
-    .frase-imp{
-        font-size: 1.4em;
-        font-style: italic;
-        background-color: var(--cor-principal);
-        border-radius: 4px;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    h3 {
-        font-size: 1.4em; 
-        width: 40%;
+    .main {
+        padding: 4em;
     }
 
     .p-servicos {
         font-size: 1em;
     }
 
-    .div-banner {
-        text-align: center;
+    .titulo-oport {
+        margin-bottom: 0.5em;
+    }
+
+    .frase-imp {
+        font-size: 1em;
+        margin-top: -2em;
+        margin-bottom: 2em;
+        
     }
     
-    p {
-        font-size: 1.3em;
-    }
-    
-    .texto-rodape {
-        margin: 0.5em 0;
-        font-size: 2em;
+    .conteiner-quemsomos {
+        margin-bottom: 2.2em;
     }
 
-
-    .botao-oportunidades {
-        font-size: 1.5em;
-        min-width: 100%;
+    .contato-titulo {
+        margin-bottom: -2em;
+        margin-left: -2em;
     }
+  
 
-    /*alterações do menu */
+  }
+@media screen and (min-width: 1000px) and (max-width: 1428px) {
 
-    
-    .menu-icon {
-        font-size: 3em;
-    }
-
-    .menu li {
-        padding: 2em;
-        font-size: 1.2em;
-        font-weight: 800;
-        width: 40vh;
-    }
-
-    .menu-elementos {
-        font-size: 1.2em;
-        font-weight: 800;
-    }
-
-    /*imagens*/
-
-    .imagem-banner {
-        width: 50vh;
-        margin: 2em 1em 5em 0;
-    }
-
-    .imagem-banner-servicos {
-        width: 80%;
-        border-radius: 1em;
-    }
-    
-    .logo-titulo {
-        width: 90%;
-        padding: 1em;
-    }
-
-    .imagem__logo {
-        max-width: 10em;
-        height: auto;
-}
-
-  /*OPORTUNIDADES*/
-
-  .main-conteiner {
-    margin: 1em;
-}
-
-    .btn-zap-preto {
-        background-position: 10%;
-        background-size: 2em;
-    }
-
-    .form1 {
-        top: 12em;
-    }
-
-    .imagem-Fcontato {
-        height: 300px;
-        width: 400px;
-        margin: 1em 0.5em 0 0.5em;
-    }
-
-    .conteiner-oportunidade {
-        display: flex;
-    }
-    
-    .p-oportunidades {
-        margin-left: 0.5em;
+    .main {
+        padding: 5em;
         
     }
 
-    .btn {
-        font-size: inherit;
-        padding: 15px 80px;
-        margin: 0 0 15px 10px;
-    }
-
-    .form-descricao{
-        font-size: 1em;
-        color: whitesmoke;
-        display: block;
-    }
-
-    .p-oportunidades {
-        margin-left: 0.5em;
-        font-size: 1.4em;
-    }
-
-    .p-oportunidades-extra {
-        display: none;
-    }
-
-    .main-conteiner {
-        margin: 2em 0;
-    }
-
-    .valor {
-        background-color: var(--cor-principal);
-        font-size: 2.3em;
-        width: 100%;
-        border-radius: 1em;
-        display: none;
-    }
-
-    .p-textos {
-        margin-top: 0;
-    }
-
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1428px) {
-    .main {
-        padding: 5em;
+    .form-textos {
+        text-align: left;
     }
 
     .hamburguer {
@@ -663,7 +658,7 @@ h3 {
     }
 
     h2 {
-        font-size: 1.7em;
+        font-size: 2em;
     }
 
     h3 {
@@ -671,14 +666,23 @@ h3 {
         width: 40%;
     }
 
+    
     p {
-        font-size: 1.8em;
+        font-size: 1.6em;
         width: 60%;
+    }
+
+    .p-oportunidades-extra {
+        font-size: 1em;
     }
 
     .p-servicos {
         font-size: 1.2em;
         width: 100%;
+    }
+
+    .titulo-oport {
+        font-size: 2em;
     }
 
     .ancora {
@@ -704,6 +708,9 @@ h3 {
 
     .frase-imp {
         font-size: 1.4em;
+        margin-top: -2em;
+        margin-bottom: 4em;
+        
     }
 
     .header-elemento {
@@ -716,13 +723,24 @@ h3 {
 
     .botao-oportunidades {
         font-size: 1.2em;
+        width: 50%;
     }
 
     .p-home {
         width: 100%;
+        font-size: 1.4em;
     }
 
+    /* .conteiner-home {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4em;
+    }
 
+    .imagem-trato {
+        width: 400px;
+        height: auto;
+    } */
 
     .imagem__logo {
         max-width: 8rem;
@@ -736,7 +754,6 @@ h3 {
         height: auto;  
     }
 
-    
 
     .imagem-banner {
         width: 60vh;
@@ -746,88 +763,98 @@ h3 {
     .imagem-banner-servicos {
         width: 80%;
         border-radius: 1em;
+        margin-top: 2em;
     }
 
+    .imagem-trato {
+        display: block;
+        width: 500px;
+        height: 350px;
+        margin: 0 0 2em 2em;
+    }
 
+    .conteiner-quemsomos {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .p-quemsomos {
+       font-size: 1.6em;
+       color: whitesmoke;
+       margin-bottom: -1em;
+    }
+
+    .subtitulo {
+        margin-top: -1em;
+        margin-bottom: -2em;
+    }
+
+    .display-form {
+        text-align: center;
+    }
+    
     /*OPORTUNIDADES*/
 
-    .div-oport {
-        display: flex;
-        width: 60%;
+    .main-conteiner {
+        margin: 3em 0.5em 1em 0.5em;
+        width: 100%;
+        text-align: center;
+        height: auto;
     }
 
+    .conteiner-oport {
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        gap: 3em;
+    }
+
+ 
+
     .btn-zap-preto {
-        background-position: 10%;
+        background-position: 5%;
         background-size: 2em;
     }
 
     .form1 {
-        top: 10em;
-        display: flex;
         flex-direction: column;
         align-items: center;
         
     }
 
-    form {
-        margin-bottom: 6em;
-    }
-
-    .imagem-Fcontato {
-        height: 300px;
-        width: 400px;
-        margin: 1em 2em 0 0.5em;
-    }
-
     .conteiner-oportunidade {
-        display: flex;
+       text-align: center;
     }
     
     .p-oportunidades {
-        margin-left: 0.5em;
+        width: 100%;
+        margin-top: 4em;
+        font-size: 1.5em;
     }
+
+    
 
     .btn {
         font-size: inherit;
-        padding: 15px 80px;
-        margin: 0 0 0 15px;
+        padding: 15px 60px;
+        margin: 15px 15px 15px 15px;
     }
 
-    .form-descricao{
-        font-size: 1em;
-        color: whitesmoke;
-        display: block;
-        width: 70%;
+
+    .btn-whatsapp {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+       
     }
-
-    .main-conteiner {
-        margin: 0 0 5em 0;
-    }
-
-    .p-oportunidades {
-        margin-left: 0.5em;
-        width: 100%;
-    }
-
-    .valor {
-        background-color: var(--cor-principal);
-        font-size: 2.3em;
-        width: 50%;
-        border-radius: 1em;
-        display: block;
-    }
-
-    
-
-
 }
 
 @media screen and (min-width: 1428px) {
 
     .main {
-        padding: 7em;
+        padding: 5em;
     }
-
+   
     .hamburguer {
         display: none;
     }
@@ -835,15 +862,15 @@ h3 {
     .header-elementos {
         display: flex;
         list-style: none;
-        gap: 3em;
+        gap: 1em;
     }
 
     .ancora {
         text-decoration: none;
         color: white;
-        font-size: 1.7em;
+        font-size: 1.9em;
         font-weight: 900;
-        margin: 0 1em;
+        margin: 0 1.5em;
         font-family: 'Roboto Condensed', sans-serif;
     }
 
@@ -863,6 +890,7 @@ h3 {
 
     .conteiner-main {
         display: flex;
+        width: 100%;
     }
 
     /*
@@ -884,22 +912,28 @@ h3 {
     }
 
     h2 {
-        font-size: 2.5em;
+        font-size: 2.7em;
     }
 
     h3 {
-        width: 25%;
-        font-size: 2em;
+        width: 40%;
+        font-size: 2.5em;
     }
     
     p {
-        font-size: 2em;
-        width: 70%;
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    .titulo-oport {
+        font-size: 2.7em;
+        margin: 1em 0 0 1em;
     }
 
     .p-servicos {
         font-size: 1.4em;
         width: 100%;
+        margin-bottom: 3em;
     }
 
     .frase-imp {
@@ -924,33 +958,41 @@ h3 {
 
     .div-banner {
         text-align: center;
-        
     }
 
 
     .imagem-banner-servicos {
         width: 60%;
         border-radius: 1em;
+
+        margin-top: 2em;
     }
 
     .logo-titulo {
-        width: 50vh;
+        width: 40vh;
         height: auto;
         
     }
 
     .div-oport {
-        width: 60%;
+        width: 100%;
+        margin: 2em 0;
     }
 
     .botao-oportunidades {
         font-size: 1.3em;
+        width: 50%;
         
     }
 
 
     .p-home {
         width: 100%;
+        font-size: 2em;
+    }
+
+    .p-servicos {
+        font-size: 1.8em;
     }
 
     
@@ -971,15 +1013,59 @@ h3 {
         border: white solid 1px;
     }
 
-    .p-quemsomos {
-        margin-bottom: 3em;
+   
+
+    .imagem-trato {
+        display: block;
+        width: 500px;
+        height: 450px;
+        margin: 0 0 2em 2em;
     }
 
+    .conteiner-quemsomos {
+        display: flex;
+        align-items: center;
+        margin-top: 10em;
+    
+    }
+
+    .p-quemsomos {
+       font-size: 2.3em;
+       color: whitesmoke;
+       width: 55%;
+       margin-right: 4em;
+       margin-bottom: -1em;
+    }
+
+    .subtitulo {
+        margin-top: 1em;
+        margin-bottom: -6em;
+    }
+
+   .titulo-home {
+    margin-top: 1em;
+    margin-bottom: 0;
+   }
+    
     /*OPORTUNIDADES*/
 
     .main-conteiner {
         margin: 0 0 5em 0;
+        width: 100%;
+        text-align: center;
+        
+        height: auto;
     }
+
+    .conteiner-oport {
+        padding: 6em;
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        gap: 3em;
+        height: auto;
+    }
+
+ 
 
     .btn-zap-preto {
         background-position: 10%;
@@ -987,31 +1073,26 @@ h3 {
     }
 
     .form1 {
-        top: 10em;
-        display: flex;
         flex-direction: column;
         align-items: center;
         
+        
     }
 
-    form {
-        margin-bottom: 6em;
-    }
-
-    .imagem-Fcontato {
-        height: 500px;
-        width: 600px;
-        margin: 0em 2em 0 0.5em;
+    .display-form {
+        text-align: center;
     }
 
     .conteiner-oportunidade {
-        display: flex;
+       text-align: center;
     }
     
     .p-oportunidades {
-        margin-left: 1.2em;
         width: 100%;
+        margin-top: 3em;
     }
+
+    
 
     .btn {
         font-size: inherit;
@@ -1021,21 +1102,13 @@ h3 {
 
    
 
-    .form-descricao{
-       
-        font-size: 1.7em;
-        color: whitesmoke;
-        display: block;
-        width: 90%;
-        }
-
-
-    .valor {
-        background-color: var(--cor-principal);
-        font-size: 2em;
-        width: 50%;
-        border-radius: 1em;
-        display: block;
-        margin: 0;
+    .btn-whatsapp {
+        width: 90px;
+        height: 90px;
+        font-size: 50px;
     }
+
+
+
+   
 }
